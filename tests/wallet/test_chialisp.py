@@ -1,6 +1,6 @@
 import pytest
 
-from hddoge.wallet.hddogelisp import (
+from hddoge.wallet.chialisp import (
     apply,
     args,
     cons,
@@ -17,7 +17,7 @@ from hddoge.wallet.hddogelisp import (
 )
 
 
-class TestHddogelisp:
+class TestChialisp:
     def test_sexp(self):
         assert sexp() == "()"
         assert sexp(1) == "(1)"

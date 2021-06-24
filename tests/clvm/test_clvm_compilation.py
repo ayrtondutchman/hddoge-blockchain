@@ -9,7 +9,7 @@ wallet_program_files = set(
     [
         "hddoge/wallet/puzzles/calculate_synthetic_public_key.clvm",
         "hddoge/wallet/puzzles/cc.clvm",
-        "hddoge/wallet/puzzles/hddogelisp_deserialisation.clvm",
+        "hddoge/wallet/puzzles/chialisp_deserialisation.clvm",
         "hddoge/wallet/puzzles/rom_bootstrap_generator.clvm",
         "hddoge/wallet/puzzles/generator_for_single_coin.clvm",
         "hddoge/wallet/puzzles/genesis-by-coin-id-with-0.clvm",

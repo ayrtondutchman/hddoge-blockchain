@@ -7,7 +7,7 @@ from hddoge.types.blockchain_format.program import Program
 from hddoge.types.blockchain_format.sized_bytes import bytes32
 from hddoge.types.condition_opcodes import ConditionOpcode
 from hddoge.util.ints import uint64
-from hddoge.wallet.hddogelisp import sexp
+from hddoge.wallet.chialisp import sexp
 from hddoge.wallet.puzzles.load_clvm import load_clvm
 
 RATE_LIMITED_MODE = 1
