@@ -302,7 +302,7 @@ full_node:
   # List of trusted DNS seeders to bootstrap from.
   # If you modify this, please change the hardcode as well from FullNode.set_server()
   dns_servers:
-    - "dns-introducer.chia.net"
+    - "dns-introducer.hddoge.org"
   farmer_peer:
       host: *self_hostname
       port: 6947
@@ -310,7 +310,7 @@ full_node:
       host: *self_hostname
       port: 23042
   introducer_peer:
-      host: introducer.chia.net  # Chia AWS introducer IPv4/IPv6
+      host: introducer.hddoge.org  # Chia AWS introducer IPv4/IPv6
       port: 6969
   wallet_peer:
     host: *self_hostname
