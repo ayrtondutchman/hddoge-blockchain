@@ -40,7 +40,7 @@ export default function LocaleToggle(props: Props) {
   function handleHelpTranslate() {
     handleClose();
 
-    openExternal('https://github.com/ayrtondutchman/hddoge-blockchain-gui/tree/main/src/locales/README.md');
+    openExternal('https://github.com/Hddoge-Network/hddoge-blockchain-gui/tree/main/src/locales/README.md');
   }
 
   const localeData = useMemo(

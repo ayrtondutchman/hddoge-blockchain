@@ -66,6 +66,19 @@ export default function FarmLatestBlockChallenges() {
         rowsPerPage={5}
         pages
       />
+      <Typography variant="caption">
+        <Trans>
+          *Want to explore Hddoge’s blocks further? Check out{' '}
+          <Link
+            color="primary"
+            href="https://www.hddogeexplorer.com/"
+            target="_blank"
+          >
+            Hddoge Explorer
+          </Link>{' '}
+          built by an open source developer.
+        </Trans>
+      </Typography>
     </Card>
   );
 }

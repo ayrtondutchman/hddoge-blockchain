@@ -112,14 +112,14 @@ describe("units", () => {
     });
     it("updates an existing display", () => {
       units.setDisplay("hddoge", {
-        format: "{amount} THDG",
+        format: "{amount} TXCH",
         fractionDigits: 0
       });
 
       const result = units.getDisplay("hddoge");
 
       expect(result).toEqual({
-        format: "{amount} THDG",
+        format: "{amount} TXCH",
         fractionDigits: 0
       });
     });

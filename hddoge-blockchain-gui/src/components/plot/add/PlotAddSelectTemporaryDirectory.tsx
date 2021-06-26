@@ -39,7 +39,7 @@ export default function PlotAddSelectTemporaryDirectory() {
       <Typography variant="subtitle1">
         <Trans>
           Select the temporary destination for the folder where you would like the plot to be stored.
-          We recommend you use a fast SSD.
+          We recommend you use a fast drive.
         </Trans>
       </Typography>
 
@@ -69,7 +69,7 @@ export default function PlotAddSelectTemporaryDirectory() {
           }}
           required
         />
-        <ButtonSelected onClick={handleSelect} size="large" variant="contained" selected={hasWorkspaceLocation}>
+        <ButtonSelected onClick={handleSelect} size="large" variant="contained" selected={hasWorkspaceLocation} nowrap>
           {hasWorkspaceLocation ? (
             <Trans>Selected</Trans>
           ) : (
@@ -100,7 +100,7 @@ export default function PlotAddSelectTemporaryDirectory() {
               }}
               variant="outlined"
             />
-            <ButtonSelected onClick={handleSelect2} size="large" variant="contained" selected={hasWorkspaceLocation2}>
+            <ButtonSelected onClick={handleSelect2} size="large" variant="contained" selected={hasWorkspaceLocation2} nowrap>
               {hasWorkspaceLocation2 ? (
                 <Trans>Selected</Trans>
               ) : (

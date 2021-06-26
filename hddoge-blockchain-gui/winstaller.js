@@ -18,7 +18,7 @@ function getInstallerConfig () {
     authors: 'Hddoge Network',
     version: process.env.HDDOGE_INSTALLER_VERSION,
     noMsi: true,
-    iconUrl: 'https://raw.githubusercontent.com/ayrtondutchman/hddoge-blockchain/master/electron-react/src/assets/img/hddoge.ico',
+    iconUrl: 'https://raw.githubusercontent.com/Hddoge-Network/hddoge-blockchain/master/electron-react/src/assets/img/hddoge.ico',
     outputDirectory: path.join(outPath, 'windows-installer'),
     certificateFile: 'win_code_sign_cert.p12',
     certificatePassword: process.env.WIN_CODE_SIGN_PASS,

@@ -110,7 +110,7 @@ if (!handleSquirrelEvent()) {
   // if any of these checks return false, don't do any other initialization since the app is quitting
   if (ensureSingleInstance() && ensureCorrectEnvironment()) {
     // this needs to happen early in startup so all processes share the same global config
-    hddogeConfig.loadConfig(hddogeEnvironment.getHddogeVersion());
+    hddogeConfig.loadConfig('mainnet');
     global.sharedObj = { local_test };
 
     const exitPyProc = (e) => {};
@@ -359,7 +359,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Hddoge Blockchain Wiki' }),
             click: () => {
               openExternal(
-                'https://github.com/Ayrtondutchman/hddoge-blockchain/wiki',
+                'https://github.com/Hddoge-Network/hddoge-blockchain/wiki',
               );
             },
           },
@@ -367,7 +367,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Frequently Asked Questions' }),
             click: () => {
               openExternal(
-                'https://github.com/Ayrtondutchman/hddoge-blockchain/wiki/FAQ',
+                'https://github.com/Hddoge-Network/hddoge-blockchain/wiki/FAQ',
               );
             },
           },
@@ -375,7 +375,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Release Notes' }),
             click: () => {
               openExternal(
-                'https://github.com/Ayrtondutchman/hddoge-blockchain/releases',
+                'https://github.com/Hddoge-Network/hddoge-blockchain/releases',
               );
             },
           },
@@ -383,7 +383,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Contribute on GitHub' }),
             click: () => {
               openExternal(
-                'https://github.com/Ayrtondutchman/hddoge-blockchain/blob/master/CONTRIBUTING.md',
+                'https://github.com/Hddoge-Network/hddoge-blockchain/blob/master/CONTRIBUTING.md',
               );
             },
           },
@@ -394,14 +394,20 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Report an Issue...' }),
             click: () => {
               openExternal(
-                'https://github.com/Ayrtondutchman/hddoge-blockchain/issues',
+                'https://github.com/Hddoge-Network/hddoge-blockchain/issues',
               );
             },
           },
           {
-            label: i18n._(/* i18n */ { id: 'Chat on Discord' }),
+            label: i18n._(/* i18n */ { id: 'Chat on KeyBase' }),
             click: () => {
-              openExternal('https://discord.gg/sE7kTJB22x');
+              openExternal('https://keybase.io/team/hddoge_network.public');
+            },
+          },
+          {
+            label: i18n._(/* i18n */ { id: 'Follow on Twitter' }),
+            click: () => {
+              openExternal('https://twitter.com/hddoge_project');
             },
           },
         ],

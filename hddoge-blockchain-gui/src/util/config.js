@@ -6,27 +6,23 @@ const lodash = require('lodash');
 
 // defaults used in case of error point to the localhost daemon & its certs
 let self_hostname = 'localhost';
-global.daemon_rpc_ws = `wss://${self_hostname}:55400`;
+global.daemon_rpc_ws = `wss://${self_hostname}:33427`;
 global.cert_path = 'config/ssl/daemon/private_daemon.crt';
 global.key_path = 'config/ssl/daemon/private_daemon.key';
 
-function loadConfig(version) {
+function loadConfig(net) {
   try {
-    // finding the right config file uses this precedence
-    // 1) HDDOGE_ROOT environment variable
-    // 2) version passed in and determined by the `hddoge version` call
-
-    // check if HDDOGE_ROOT is set. it overrides everything else
+    // check if HDDOGE_ROOT is set. it overrides 'net'
     const config_root_dir =
       'HDDOGE_ROOT' in process.env
         ? process.env.HDDOGE_ROOT
-        : path.join(os.homedir(), '.hddoge', version);
+        : path.join(os.homedir(), '.hddoge', net);
     const config = yaml.load(
       fs.readFileSync(path.join(config_root_dir, 'config/config.yaml'), 'utf8'),
     );
 
     self_hostname = lodash.get(config, 'ui.daemon_host', 'localhost'); // jshint ignore:line
-    const daemon_port = lodash.get(config, 'ui.daemon_port', 55400); // jshint ignore:line
+    const daemon_port = lodash.get(config, 'ui.daemon_port', 33427); // jshint ignore:line
 
     // store these in the global object so they can be used by both main and renderer processes
     global.daemon_rpc_ws = `wss://${self_hostname}:${daemon_port}`;
