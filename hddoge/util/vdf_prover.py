@@ -1,6 +1,6 @@
 from typing import Tuple
 
-from hddogevdf import prove
+from chiavdf import prove
 
 from hddoge.consensus.constants import ConsensusConstants
 from hddoge.types.blockchain_format.classgroup import ClassgroupElement

@@ -5,7 +5,7 @@ from enum import IntEnum
 from typing import Optional
 from functools import lru_cache
 
-from hddogevdf import create_discriminant, verify_n_wesolowski
+from chiavdf import create_discriminant, verify_n_wesolowski
 
 from hddoge.consensus.constants import ConsensusConstants
 from hddoge.types.blockchain_format.classgroup import ClassgroupElement
