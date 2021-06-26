@@ -97,7 +97,7 @@ private_ssl_ca:
   crt: "config/ssl/ca/private_ca.crt"
   key: "config/ssl/ca/private_ca.key"
 
-chia_ssl_ca:
+hddoge_ssl_ca:
   crt: "config/ssl/ca/chia_ca.crt"
   key: "config/ssl/ca/chia_ca.key"
 
@@ -145,7 +145,7 @@ harvester:
     crt: "config/ssl/ca/private_ca.crt"
     key: "config/ssl/ca/private_ca.key"
 
-  chia_ssl_ca:
+  hddoge_ssl_ca:
     crt: "config/ssl/ca/chia_ca.crt"
     key: "config/ssl/ca/chia_ca.key"
 
