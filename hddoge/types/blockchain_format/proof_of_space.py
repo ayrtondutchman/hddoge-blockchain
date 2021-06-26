@@ -4,7 +4,7 @@ from typing import Optional
 
 from bitstring import BitArray
 from blspy import G1Element
-from hddogepos import Verifier
+from chiapos import Verifier
 
 from hddoge.consensus.constants import ConsensusConstants
 from hddoge.types.blockchain_format.sized_bytes import bytes32
