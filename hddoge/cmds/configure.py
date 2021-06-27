@@ -85,7 +85,7 @@ def configure(
     if testnet is not None:
         if testnet == "true" or testnet == "t":
             print("Setting Testnet")
-            testnet_port = "69420"
+            testnet_port = "6942"
             testnet_introducer = "beta1.introducer.hddoge.org"
             testnet = "testnet7"
             config["full_node"]["port"] = int(testnet_port)
