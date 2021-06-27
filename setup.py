@@ -95,7 +95,7 @@ kwargs = dict(
             "hddoge_farmer = hddoge.server.start_farmer:main",
             "hddoge_introducer = hddoge.server.start_introducer:main",
             "hddoge_timelord = hddoge.server.start_timelord:main",
-            "hddogege_timelord_launcher = hddoge.timelord.timelord_launcher:main",
+            "hddoge_timelord_launcher = hddoge.timelord.timelord_launcher:main",
             "hddoge_full_node_simulator = hddoge.simulator.start_simulator:main",
         ]
     },

@@ -63,17 +63,17 @@ jobs:
     - name: Checkout test blocks and plots
       uses: actions/checkout@v2
       with:
-        repository: 'Hddogege-Network/test-cache'
-        path: '.hddogege'
+        repository: 'hddoge-Network/test-cache'
+        path: '.hddoge'
         ref: '0.26.0'
         fetch-depth: 1
 
     - name: Link home directory
       run: |
         cd $HOME
-        ln -s $GITHUB_WORKSPACE/.hddogege
-        echo "$HOME/.hddogege"
-        ls -al $HOME/.hddogege
+        ln -s $GITHUB_WORKSPACE/.hddoge
+        echo "$HOME/.hddoge"
+        ls -al $HOME/.hddoge
 
     - name: Install ubuntu dependencies
       run: |
