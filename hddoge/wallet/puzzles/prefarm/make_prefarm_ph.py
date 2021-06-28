@@ -8,8 +8,8 @@ from hddoge.util.bech32m import decode_puzzle_hash, encode_puzzle_hash
 from hddoge.util.condition_tools import parse_sexp_to_conditions
 from hddoge.util.ints import uint32
 
-address1 = "thdg1qyj08zxd02ascn0h3cjfnuhclulp8x3x89jla6ahykmlnusyv4hsh5krzw"  # Gene wallet (m/12381/6969/2/42): $ToDo:
-address2 = "thdg1qyj08zxd02ascn0h3cjfnuhclulp8x3x89jla6ahykmlnusyv4hsh5krzw"  # Mariano address (m/12381/6969/2/0) ToDo:
+address1 = "thdg1vr4rtzejw4t3c5rhqnpkgj8ggrnksgvxwaqc5jxryn5dzm7yp8nqane9e7"  # Gene wallet (m/12381/6969/2/42): $ToDo:
+address2 = "thdg19gf7zg5ne2jluj35rpnx8p7cll3zdx87xqrt0y9a4yjw556sqewsfssw7n"  # Mariano address (m/12381/6969/2/0) ToDo:
 
 ph1 = decode_puzzle_hash(address1)
 ph2 = decode_puzzle_hash(address2)
