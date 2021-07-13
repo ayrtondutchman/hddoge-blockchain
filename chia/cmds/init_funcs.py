@@ -75,7 +75,7 @@ def check_keys(new_root: Path) -> None:
 
     # Set the destinations
     if "xch_target_address" not in config["farmer"]:
-        print(f"Setting the xch destination address for coinbase fees reward to {all_targets[0]}")
+        print(f"Setting the hdg destination address for coinbase fees reward to {all_targets[0]}")
         config["farmer"]["xch_target_address"] = all_targets[0]
     elif config["farmer"]["xch_target_address"] not in all_targets:
         print(
@@ -87,7 +87,7 @@ def check_keys(new_root: Path) -> None:
     if "pool" not in config:
         config["pool"] = {}
     if "xch_target_address" not in config["pool"]:
-        print(f"Setting the xch destination address for coinbase reward to {all_targets[0]}")
+        print(f"Setting the hdg destination address for coinbase reward to {all_targets[0]}")
         config["pool"]["xch_target_address"] = all_targets[0]
     elif config["pool"]["xch_target_address"] not in all_targets:
         print(
@@ -177,8 +177,8 @@ def create_all_ssl(root: Path):
     private_ca_key_path = ca_dir / "private_ca.key"
     private_ca_crt_path = ca_dir / "private_ca.crt"
     chia_ca_crt, chia_ca_key = get_chia_ca_crt_key()
-    chia_ca_crt_path = ca_dir / "chia_ca.crt"
-    chia_ca_key_path = ca_dir / "chia_ca.key"
+    chia_ca_crt_path = ca_dir / "hddoge_ca.crt"
+    chia_ca_key_path = ca_dir / "hddoge_ca.key"
     chia_ca_crt_path.write_bytes(chia_ca_crt)
     chia_ca_key_path.write_bytes(chia_ca_key)
 
@@ -314,16 +314,16 @@ def chia_full_version_str() -> str:
 
 
 def chia_init(root_path: Path):
-    if os.environ.get("CHIA_ROOT", None) is not None:
+    if os.environ.get("HDDOGE_ROOT", None) is not None:
         print(
-            f"warning, your CHIA_ROOT is set to {os.environ['CHIA_ROOT']}. "
+            f"warning, your HDDOGE_ROOT is set to {os.environ['HDDOGE_ROOT']}. "
             f"Please unset the environment variable and run chia init again\n"
             f"or manually migrate config.yaml"
         )
 
     print(f"Chia directory {root_path}")
     if root_path.is_dir() and Path(root_path / "config" / "config.yaml").exists():
-        # This is reached if CHIA_ROOT is set, or if user has run chia init twice
+        # This is reached if HDDOGE_ROOT is set, or if user has run chia init twice
         # before a new update.
         check_keys(root_path)
         print(f"{root_path} already exists, no migration action taken")

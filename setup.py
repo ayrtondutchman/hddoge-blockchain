@@ -105,7 +105,7 @@ kwargs = dict(
         "chia": ["pyinstaller.spec"],
         "chia.wallet.puzzles": ["*.clvm", "*.clvm.hex"],
         "chia.util": ["initial-*.yaml", "english.txt"],
-        "chia.ssl": ["chia_ca.crt", "chia_ca.key", "dst_root_ca.pem"],
+        "chia.ssl": ["hddoge_ca.crt", "hddoge_ca.key", "dst_root_ca.pem"],
         "mozilla-ca": ["cacert.pem"],
     },
     use_scm_version={"fallback_version": "unknown-no-.git-directory"},

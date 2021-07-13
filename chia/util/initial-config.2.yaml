@@ -97,7 +97,7 @@ private_ssl_ca:
   crt: "config/ssl/ca/private_ca.crt"
   key: "config/ssl/ca/private_ca.key"
 
-chia_ssl_ca:
+hddoge_ssl_ca:
   crt: "config/ssl/ca/hddoge_ca.crt"
   key: "config/ssl/ca/hddoge_ca.key"
 
@@ -115,7 +115,7 @@ logging: &logging
   log_maxfilesrotation: 7 #  Max files in rotation. Default value 7 if the key is not set
   log_syslog: False  # If True, outputs to SysLog host and port specified
   log_syslog_host: "localhost"  # Send logging messages to a remote or local Unix syslog
-  log_syslog_port: 514  # UDP port of the remote or local Unix syslog
+  log_syslog_port: 514  # UDP port of the remote or local Unix syslog
 
 harvester:
   # The harvester server (if run) will run on this port
@@ -145,13 +145,13 @@ harvester:
     crt: "config/ssl/ca/private_ca.crt"
     key: "config/ssl/ca/private_ca.key"
 
-  chia_ssl_ca:
+  hddoge_ssl_ca:
     crt: "config/ssl/ca/hddoge_ca.crt"
     key: "config/ssl/ca/hddoge_ca.key"
 
 pool:
   # Replace this with a real puzzle hash
-  # xch_target_address: txch102gkhhzs60grx7cfnpng5n6rjecr89r86l5s8xux2za8k820cxsq64ssdg
+  # hdg_target_address: thdg102gkhhzs60grx7cfnpng5n6rjecr89r86l5s8xux2za8k820cxsq64ssdg
   logging: *logging
   network_overrides: *network_overrides
   selected_network: *selected_network
@@ -171,7 +171,7 @@ farmer:
   pool_public_keys: []
 
   # Replace this with a real puzzle hash
-  # xch_target_address: txch102gkhhzs60grx7cfnpng5n6rjecr89r86l5s8xux2za8k820cxsq64ssdg
+  # hdg_target_address: thdg102gkhhzs60grx7cfnpng5n6rjecr89r86l5s8xux2za8k820cxsq64ssdg
 
   # If True, starts an RPC server at the following port
   start_rpc_server: True
@@ -405,5 +405,3 @@ wallet:
 
   trusted_peers:
     trusted_node_1: "config/ssl/full_node/public_full_node.crt"
-
-  short_sync_blocks_behind_threshold: 20
