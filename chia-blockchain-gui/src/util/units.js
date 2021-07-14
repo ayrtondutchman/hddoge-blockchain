@@ -1,12 +1,12 @@
 const units = {
   chia: 1,
-  mojo: 1 / 1e12,
+  pupps: 1 / 1e12,
   colouredcoin: 1 / 1e9,
 };
 
 const aliases = {
   chia: ['ch', 'chia', 'Chia'],
-  mojo: ['mj', 'mojo'],
+  pupps: ['mj', 'pupps'],
   colouredcoin: ['cc', 'colouredcoin'],
 };
 
@@ -15,7 +15,7 @@ const display = {
     format: '{amount} CH',
     fractionDigits: 12,
   },
-  mojo: {
+  pupps: {
     format: '{amount} MJ',
     fractionDigits: 0,
   },

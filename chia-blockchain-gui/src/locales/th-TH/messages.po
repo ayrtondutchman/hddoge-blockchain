@@ -2580,6 +2580,6 @@ msgid "{currencyCode} User Transaction Fees"
 msgstr "{currencyCode} ค่าธรรมเนียมการโอนของผู้ใช้"
 
 #: src/components/core/components/Amount/Amount.tsx:52
-msgid "{mojo, plural, one {mojo} other {mojos}}"
+msgid "{pupps, plural, one {pupps} other {puppss}}"
 msgstr ""
 

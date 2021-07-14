@@ -83,32 +83,32 @@ chia_formatter.setFiat = (currency, rate, display = null) => {
   units.setUnit(currency, 1 / rate, display);
 };
 
-export const mojo_to_chia = (mojo) => {
-  return chia_formatter(Number.parseInt(mojo), 'mojo').to('chia').value();
+export const pupps_to_chia = (pupps) => {
+  return chia_formatter(Number.parseInt(pupps), 'pupps').to('chia').value();
 };
 
-export const chia_to_mojo = (chia) => {
+export const chia_to_pupps = (chia) => {
   return chia_formatter(Number.parseFloat(Number(chia)), 'chia')
-    .to('mojo')
+    .to('pupps')
     .value();
 };
 
-export const mojo_to_chia_string = (mojo) => {
-  return chia_formatter(Number(mojo), 'mojo').to('chia').toString();
+export const pupps_to_chia_string = (pupps) => {
+  return chia_formatter(Number(pupps), 'pupps').to('chia').toString();
 };
 
-export const mojo_to_colouredcoin = (mojo) => {
-  return chia_formatter(Number.parseInt(mojo), 'mojo')
+export const pupps_to_colouredcoin = (pupps) => {
+  return chia_formatter(Number.parseInt(pupps), 'pupps')
     .to('colouredcoin')
     .value();
 };
 
-export const colouredcoin_to_mojo = (colouredcoin) => {
+export const colouredcoin_to_pupps = (colouredcoin) => {
   return chia_formatter(Number.parseFloat(Number(colouredcoin)), 'colouredcoin')
-    .to('mojo')
+    .to('pupps')
     .value();
 };
 
-export const mojo_to_colouredcoin_string = (mojo) => {
-  return chia_formatter(Number(mojo), 'mojo').to('colouredcoin').toString();
+export const pupps_to_colouredcoin_string = (pupps) => {
+  return chia_formatter(Number(pupps), 'pupps').to('colouredcoin').toString();
 };

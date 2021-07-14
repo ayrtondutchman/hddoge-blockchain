@@ -2592,5 +2592,5 @@ msgid "{currencyCode} User Transaction Fees"
 msgstr "{currencyCode} Tarifas de Transacción del Usuario"
 
 #: src/components/core/components/Amount/Amount.tsx:82
-msgid "{mojo, plural, one {mojo} other {mojos}}"
+msgid "{pupps, plural, one {pupps} other {puppss}}"
 msgstr ""

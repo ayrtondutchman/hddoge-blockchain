@@ -3,7 +3,7 @@ import { Trans } from '@lingui/macro';
 import { useSelector } from 'react-redux';
 import type { RootState } from '../../../modules/rootReducer';
 import FarmCard from './FarmCard';
-import { mojo_to_chia } from '../../../util/chia';
+import { pupps_to_chia } from '../../../util/chia';
 import useCurrencyCode from '../../../hooks/useCurrencyCode';
 
 export default function FarmCardTotalChiaFarmed() {
@@ -20,7 +20,7 @@ export default function FarmCardTotalChiaFarmed() {
   const totalChiaFarmed = useMemo(() => {
     if (farmedAmount !== undefined) {
       const val = BigInt(farmedAmount.toString());
-      return mojo_to_chia(val);
+      return pupps_to_chia(val);
     }
   }, [farmedAmount]);
 
