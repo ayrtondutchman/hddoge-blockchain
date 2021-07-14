@@ -86,7 +86,7 @@ def configure(
         if testnet == "true" or testnet == "t":
             print("Setting Testnet")
             testnet_port = "49126"
-            testnet_introducer = "beta1_introducer.chia.net"
+            testnet_introducer = "beta1.introducer.hddoge.org"
             testnet = "testnet7"
             config["full_node"]["port"] = int(testnet_port)
             config["full_node"]["introducer_peer"]["port"] = int(testnet_port)
