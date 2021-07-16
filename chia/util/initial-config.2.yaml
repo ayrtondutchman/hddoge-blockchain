@@ -68,7 +68,7 @@ network_overrides: &network_overrides
       NETWORK_TYPE: 1
       MEMPOOL_BLOCK_BUFFER: 10
       EPOCH_BLOCKS: 768
-      DIFFICULTY_STARTING: 30
+      DIFFICULTY_STARTING: 1
   config:
     mainnet:
       address_prefix: "hdg"
