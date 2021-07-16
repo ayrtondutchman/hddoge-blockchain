@@ -90,15 +90,15 @@ kwargs = dict(
     ],
     entry_points={
         "console_scripts": [
-            "chia = chia.cmds.chia:main",
-            "chia_wallet = chia.server.start_wallet:main",
-            "chia_full_node = chia.server.start_full_node:main",
-            "chia_harvester = chia.server.start_harvester:main",
-            "chia_farmer = chia.server.start_farmer:main",
-            "chia_introducer = chia.server.start_introducer:main",
-            "chia_timelord = chia.server.start_timelord:main",
-            "chia_timelord_launcher = chia.timelord.timelord_launcher:main",
-            "chia_full_node_simulator = chia.simulator.start_simulator:main",
+            "hddoge = chia.cmds.chia:main",
+            "hddoge_wallet = chia.server.start_wallet:main",
+            "hddoge_full_node = chia.server.start_full_node:main",
+            "hddoge_harvester = chia.server.start_harvester:main",
+            "hddoge_farmer = chia.server.start_farmer:main",
+            "hddoge_introducer = chia.server.start_introducer:main",
+            "hddoge_timelord = chia.server.start_timelord:main",
+            "hddoge_timelord_launcher = chia.timelord.timelord_launcher:main",
+            "hddoge_full_node_simulator = chia.simulator.start_simulator:main",
         ]
     },
     package_data={
