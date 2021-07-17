@@ -72,7 +72,7 @@ network_overrides: &network_overrides
   config:
     mainnet:
       address_prefix: "hdg"
-      default_full_node_port: 6969
+      default_full_node_port: 42069
     testnet0:
       address_prefix: "thdg"
     testnet1:
@@ -163,7 +163,7 @@ farmer:
   # The farmer will attempt to connect to this full node and harvester
   full_node_peer:
     host: *self_hostname
-    port: 6969
+    port: 42069
   harvester_peer:
     host: *self_hostname
     port: 6948
@@ -212,7 +212,7 @@ timelord:
       - 150000
   full_node_peer:
       host: *self_hostname
-      port: 6969
+      port: 42069
   # Maximum number of seconds allowed for a client to reconnect to the server.
   max_connection_time: 60
   # The ip and port where the TCP clients will connect.
@@ -247,7 +247,7 @@ timelord:
 
 full_node:
   # The full node server (if run) will run on this port
-  port: 6969
+  port: 42069
 
   # Run multiple nodes with different databases by changing the database_path
   database_path: db/blockchain_v1_CHALLENGE.sqlite
@@ -311,7 +311,7 @@ full_node:
       port: 23042
   introducer_peer:
       host: introducer.hddoge.org  # Chia AWS introducer IPv4/IPv6
-      port: 6969
+      port: 42069
   wallet_peer:
     host: *self_hostname
     port: 26721
@@ -377,7 +377,7 @@ wallet:
 
   full_node_peer:
     host: *self_hostname
-    port: 6969
+    port: 42069
 
   testing: False
   database_path: wallet/db/blockchain_wallet_v1_CHALLENGE_KEY.sqlite
@@ -395,7 +395,7 @@ wallet:
 
   introducer_peer:
     host: introducer.hddoge.org # Chia AWS introducer IPv4/IPv6
-    port: 6969
+    port: 42069
 
   ssl:
     private_crt:  "config/ssl/wallet/private_wallet.crt"

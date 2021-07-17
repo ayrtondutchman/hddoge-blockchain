@@ -110,7 +110,7 @@ def configure(
 
         elif testnet == "false" or testnet == "f":
             print("Setting Mainnet")
-            mainnet_port = "6969"
+            mainnet_port = "42069"
             mainnet_introducer = "introducer.hddoge.org"
             net = "mainnet"
             config["full_node"]["port"] = int(mainnet_port)
