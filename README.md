@@ -8,7 +8,7 @@
 
 ![GitHub contributors](https://img.shields.io/github/contributors/Chia-Network/chia-blockchain?logo=GitHub)
 
-Chia is a modern cryptocurrency built from scratch, designed to be efficient, decentralized, and secure. Here are some of the features and benefits:
+HDDoge is a Fork of CHIA (xch); A modern cryptocurrency, built from scratch, designed to be efficient, decentralized, and secure. Some of the features and benefits of CHIA are displayed below, which represent similiar attributes to HDDOGE, being a fork of the former:
 * [Proof of space and time](https://docs.google.com/document/d/1tmRIb7lgi4QfKkNaxuKOBHRmwbVlGL4f7EsBDr_5xZE/edit) based consensus which allows anyone to farm with commodity hardware
 * Very easy to use full node and farmer GUI and cli (thousands of nodes active on mainnet)
 * Simplified UTXO based transaction model, with small on-chain state
@@ -18,8 +18,9 @@ Chia is a modern cryptocurrency built from scratch, designed to be efficient, de
 * Support for light clients with fast, objective syncing
 * A growing community of farmers and developers around the world
 
-Please check out the [wiki](https://github.com/Chia-Network/chia-blockchain/wiki)
-and [FAQ](https://github.com/Chia-Network/chia-blockchain/wiki/FAQ) for
+Please check out the [wiki] of CHIA(https://github.com/Chia-Network/chia-blockchain/wiki) 
+and its [FAQ](https://github.com/Chia-Network/chia-blockchain/wiki/FAQ) 
+For HDDoge, check out hddoge.org 
 information on this project.
 
 Python 3.7+ is required. Make sure your default python version is >=3.7
