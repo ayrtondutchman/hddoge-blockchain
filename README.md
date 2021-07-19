@@ -20,7 +20,7 @@ HDDoge is a Fork of CHIA (xch); A modern cryptocurrency, built from scratch, des
 
 Please check out the [wiki] of CHIA(https://github.com/Chia-Network/chia-blockchain/wiki) 
 and its [FAQ](https://github.com/Chia-Network/chia-blockchain/wiki/FAQ) 
-For HDDoge, check out hddoge.org 
+For HDDoge, check out http://hddoge.org/
 information on this project.
 
 Python 3.7+ is required. Make sure your default python version is >=3.7
